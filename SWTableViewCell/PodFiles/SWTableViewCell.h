@@ -39,6 +39,7 @@ typedef NS_ENUM(NSInteger, SWCellState)
 
 @property (nonatomic, copy) NSArray *leftUtilityButtons;
 @property (nonatomic, copy) NSArray *rightUtilityButtons;
+@property (nonatomic) CGPoint pointPressed;
 
 @property (nonatomic, weak) id <SWTableViewCellDelegate> delegate;
 

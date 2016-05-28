@@ -469,6 +469,7 @@ static NSString * const kTableViewPanState = @"state";
 
 - (void)rightUtilityButtonHandler:(id)sender
 {
+    self.pointPressed = [((UITapGestureRecognizer *)sender) locationInView:self];
     SWUtilityButtonTapGestureRecognizer *utilityButtonTapGestureRecognizer = (SWUtilityButtonTapGestureRecognizer *)sender;
     NSUInteger utilityButtonIndex = utilityButtonTapGestureRecognizer.buttonIndex;
     if ([self.delegate respondsToSelector:@selector(swipeableTableViewCell:didTriggerRightUtilityButtonWithIndex:)])
