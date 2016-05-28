@@ -10,6 +10,7 @@
 
 @interface NSMutableArray (SWUtilityButtons)
 
+- (void)sw_addUtilityButtonWithColor:(UIColor *)color title:(NSString *)title andFont:(UIFont *)font;
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color title:(NSString *)title;
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color attributedTitle:(NSAttributedString *)title;
 - (void)sw_addUtilityButtonWithColor:(UIColor *)color icon:(UIImage *)icon;
